@@ -1,0 +1,12 @@
+---
+- name: Install virtualbox for Debian OS family
+  apt: name=virtualbox
+  tags: ["packages","vagrant"]
+
+- name: Download vagrant
+  get_url: url={{ vagrant_url_deb }} dest={{vagrant_tmp_deb}}
+  tags: ["packages","vagrant"]
+
+- name: Install vagrant for Debian OS family
+  apt: deb={{vagrant_tmp_deb}}
+  tags: ["packages","vagrant"]

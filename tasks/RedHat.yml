@@ -1,0 +1,8 @@
+---
+- name: Download vagrant
+  get_url: url={{ vagrant_url_rpm }} dest={{vagrant_tmp_rpm}}
+  tags: ["packages","vagrant"]
+
+- name: Install vagrant for RedHat OS family
+  yum: name={{vagrant_tmp_rpm}}
+  tags: ["packages","vagrant"]

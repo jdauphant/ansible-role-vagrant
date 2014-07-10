@@ -1,0 +1,4 @@
+---
+vagrant_version: "1.6.3"
+vagrant_tmp_deb: "/tmp/vagrant.deb"
+vagrant_tmp_rpm: "/tmp/vagrant.rpm"
