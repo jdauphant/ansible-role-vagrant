@@ -3,7 +3,7 @@ ansible-role-vagrant
 
 Install vagrant with Ansible
 
-Usage :
+Base Usage :
 ```
 ---
  - hosts: all
@@ -11,5 +11,11 @@ Usage :
     - vagrant
 ```
 
-# Future features :
-- Boxes Preinstall
+Usage with version specification
+```
+---
+ - hosts: all
+   roles:
+    - role: vagrant
+      vagrant_version: "1.6.3"
+```
