@@ -10,3 +10,6 @@ Usage :
    roles:
     - vagrant
 ```
+
+# Future features :
+- Boxes Preinstall
