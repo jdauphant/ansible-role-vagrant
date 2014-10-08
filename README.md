@@ -10,6 +10,7 @@ Base Usage :
    roles:
     - vagrant
 ```
+
 Usage with version specification
 ```
 ---
