@@ -19,3 +19,8 @@ Usage with version specification
     - role: vagrant
       vagrant_version: "1.6.3"
 ```
+Local installation : (ansible need to be installed)
+```
+git clone https://github.com/jdauphant/ansible-role-vagrant.git
+ansible-playbook -i "localhost," installation.yml --ask-sudo-pass
+```
