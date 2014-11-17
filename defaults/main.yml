@@ -1,5 +1,5 @@
 ---
 vagrant_version: "1.6.4"
-vagrant_tmp_dir: "~/.ansible_downloads/"
+vagrant_tmp_dir: "/opt/ansible_downloads/"
 vagrant_tmp_deb: "{{vagrant_tmp_dir}}/vagrant_{{vagrant_version}}.deb"
 vagrant_tmp_rpm: "{{vagrant_tmp_dir}}/vagrant_{{vagrant_version}}.rpm"
