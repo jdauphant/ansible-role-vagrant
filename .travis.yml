@@ -9,5 +9,5 @@ install:
   - ansible --version
 script:
   - echo localhost > inventory
-  - ansible-playbook -i inventory --syntax-check --list-tasks test.yml
-  - ansible-playbook -i inventory --connection=local --sudo -vvvv test.yml
+  - ansible-playbook -i inventory --syntax-check --list-tasks installation.yml
+  - ansible-playbook -i inventory --connection=local --sudo -vvvv installation.yml -u root

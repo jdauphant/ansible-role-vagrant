@@ -3,7 +3,14 @@ ansible-role-vagrant
 
 Install vagrant with Ansible
 
-Base Usage :
+
+# Local installation : (ansible need to be installed)
+```
+git clone https://github.com/jdauphant/ansible-role-vagrant.git
+ansible-playbook -i "localhost," --ask-sudo-pass --connection=local installation.yml
+```
+
+# Simple Usage :
 ```
 ---
  - hosts: all
@@ -11,7 +18,7 @@ Base Usage :
     - vagrant
 ```
 
-Usage with version specification
+# Usage with version specification
 ```
 ---
  - hosts: all
