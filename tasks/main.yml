@@ -1,7 +1,10 @@
 ---
  - name: Ensure temp download directory exist
    file: state=directory path={{vagrant_tmp_dir}}
+   tags: ["packages","vagrant"]
  - include: Debian.yml
    when: ansible_os_family == 'Debian'
+   tags: ["packages","vagrant"]
  - include: RedHat.yml
    when: ansible_os_family == 'RedHat'
+   tags: ["packages","vagrant"]
