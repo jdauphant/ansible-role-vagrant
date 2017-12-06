@@ -1,6 +1,7 @@
 ---
 - name: Install virtualbox for Debian OS family
-  apt: name=virtualbox
+  apt: name={{ vagrant_virtualbox_ver }}
+  when: ( vagrant_virtualbox_install )
 
 - name: Download vagrant
   get_url: url={{ vagrant_url_deb }} dest={{vagrant_tmp_deb}}

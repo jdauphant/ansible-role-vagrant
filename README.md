@@ -26,3 +26,12 @@ ansible-playbook -i "localhost," --ask-sudo-pass --connection=local installation
     - role: vagrant
       vagrant_version: "1.6.3"
 ```
+
+# Specify virtualbox installation (For Debian)
+```
+---
+ - hosts: all
+   roles:
+    - role: vagrant
+      vagrant_virtualbox_install: True
+      vagrant_virtualbox_ver: "virtualbox-5.1"
